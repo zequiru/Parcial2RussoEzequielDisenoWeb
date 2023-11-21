@@ -35,22 +35,23 @@ body {
 
 
 footer {
-    background-color: #cdceed;
-    /* position: fixed; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    bottom: 0px;
-    right: 0px;
-    height: 50px;
-    padding: 10px;
-    width: 100%;
+  background-color: #cdceed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0px;
+  right: 0px;
+  height: 50px;
+  padding: 10px;
+  padding-bottom: 50px;
+  align-items: flex-start;
 }
 
   /* OK */
 footer p {
   color: rgb(0, 0, 0);
   text-decoration: none;
+  margin-bottom: 0px;
 }
 
   /* OK */
@@ -66,7 +67,7 @@ footer p {
 
 
 .redes {
-  height: 50px;
+  height: 20px;
   margin-right: 5px;
   margin-left: 5px;
   align-self: left;

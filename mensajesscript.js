@@ -40,9 +40,3 @@ document.getElementById('enviarBtnDos').addEventListener('click', function() {
   alert('¡Su mensaje será revisado por un moderador!');
 });
 
-
-document.getElementById('enviarBtnTres').addEventListener('click', function() {
-  $(this).hide();
-  document.getElementById('floatingTextarea').value = '';
-  alert('¡Su mensaje será revisado por un moderador!');
-});

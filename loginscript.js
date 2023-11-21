@@ -1,5 +1,5 @@
 var usuarios = [
-    { fullName: 'Lucía', apellido: 'Gomez', usuario: 'sgomez@gmail.com', tipoUsuario: 'cliente', contraseña: 'asd123' },
+    { fullName: 'Lucía', apellido: 'Gomez', usuario: 'lgomez@gmail.com', tipoUsuario: 'cliente', contraseña: 'asd123' },
     { fullName: 'María', apellido: 'Lopez', usuario: 'mlopez@gmail.com', tipoUsuario: 'profesional', contraseña: 'asd1234' },
     { fullName: 'Valentin', apellido: 'Russo', usuario: 'vrusso@gmail.com', tipoUsuario: 'administrador', contraseña: 'asd12345' }
 ];
