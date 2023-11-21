@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/styleAdmin.css">
+</head>
+
+<body>
+    <nav class="encabezado">
+        <img class="logo" src="/images/Logo.png" />
+        <h1>Centro Integral de Asistencia</h1>
+    </nav>
+    <div class="dark-mode-toggle">
+        <label for="toggle-switch">Modo Oscuro</label>
+        <input type="checkbox" id="toggle-switch">
+    </div>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="principal scrollspy-example bg-body-tertiary" tabindex="0">
+
+        <section class="profesionales container-sm">
+           <div class="boton-nuevo position-fixed mb-3 me-3 bd-mode-toggle"> <button type="button" class="btn btn-primary" id="btnNuevoUsuario" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                Nuevo usuario
+            </button>
+        </div>
+            <h1>Profesionales </h1>
+
+            <ul class="list-unstyled">
+                <li class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">María Lopez</h5>
+                                <p class="card-text">Terapia: Acompañante de gente mayor</p>
+                                <p class="card-text">Edad: 28</p>
+                                <p class="card-text">Correo: mlopez@gmail.com</p>
+                                <p class="card-text">Domicilio: Calle 123</p>
+                                <p class="card-text">Teléfono: 123456224</p>
+                                <p class="card-text">Horario disponible: 9hs a 19hs</p>
+                                <p class="card-text">Valor hora: $1500</p>
+                                <p class="card-text">Descripción: María Lopez es una acompañante terapéutica con 2 años de experiencia</p>    
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal" edad="28" nombre="María" apellido="Lopez" correo="mlopez@gmail.com" telefono="1234444664"
+                                     terapia="Acompañante de gente mayor" tarifa="1500" horario="9hs a 19hs" domicilio="Calle 123" descripcion="María Lopez es una acompañante terapéutica con 2 años de experiencia">Modificar</button>
+                                     <button type="button" class="btn btn-primary btn-eliminar">Eliminar</button>
+                    </div>
+                </li>
+                <li class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Juan Alvarez</h5>
+                                <p class="card-text">Terapia: TO</p>
+                                <p class="card-text">Edad: 38</p>
+                                <p class="card-text">Correo: jPerez@gmail.com</p>
+                                <p class="card-text">Domicilio: Calle 12345</p>
+                                <p class="card-text">Teléfono: 123456024</p>
+                                <p class="card-text">Horario disponible: 9hs a 12hs</p>
+                                <p class="card-text">Valor hora: $2500</p>
+                                <p class="card-text">Descripción: Juan es un profesional experimentado con 8 años en el campo.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal" edad="38" nombre="Juan" apellido="Alvarez" correo="jAlvarez@gmail.com" telefono="123456024"
+                                     terapia="TO" tarifa="2500" horario="9hs a 11hs" domicilio="Calle 12345" descripcion="Juan es un profesional con 10 años en el campo.">Modificar</button>
+                                     <button type="button" class="btn btn-primary btn-eliminar">Eliminar</button>
+                    </div>
+                </li>
+                <li class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Laura Villalba</h5>
+                        <p class="card-text">Terapia: Kinesiología</p>
+                        <p class="card-text">Edad: 25</p>
+                        <p class="card-text">Correo: lrodirguez@gmail.com</p>
+                        <p class="card-text">Domicilio: Calle 12322</p>
+                        <p class="card-text">Teléfono: 123456224</p>
+                        <p class="card-text">Horario disponible: 9hs a 18hs</p>
+                        <p class="card-text">Valor hora: $1900</p>
+                        <p class="card-text">Descripción: Laura Villalba es una profesional comprometida con 3 años de experiencia</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal" edad="25" nombre="Laura" apellido="Villalba" correo="lvilla@gmail.com" telefono="123456224"
+                                     terapia="Kinesiología" tarifa="1900" horario="9hs a 18hs" domicilio="Calle 12322" descripcion="Laura es una profesional con 3 años de experiencia.">Modificar</button>
+                                    <button type="button" class="btn btn-primary btn-eliminar">Eliminar</button>
+                    </div>
+                </li>
+                <li class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Juan Martínez</h5>
+                        <p class="card-text">Terapia: TO</p>
+                        <p class="card-text">Edad: 39</p>
+                        <p class="card-text">Correo: amartinez@gmail.com</p>
+                        <p class="card-text">Domicilio: Calle 000</p>
+                        <p class="card-text">Teléfono: 120006224</p>
+                        <p class="card-text">Horario disponible: 9hs a 19hs</p>
+                        <p class="card-text">Valor hora: $2000</p>
+                        <p class="card-text">Descripción: Juan Martínez es un acompañante terapéutico con 6 años de experiencia. Ha recibido elogios por su enfoque compasivo y atención personalizada.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal" edad="39" nombre="Juan" apellido="Martínez" correo="jmartinez@gmail.com" telefono="120006224"
+                                     terapia="Kinesiología" tarifa="2000" horario="9hs a 19hs" domicilio="Calle 12322" descripcion="Juan es un excelente profesional en la práctica con 16 años de experiencia. Ha recibido elogios por su enfoque compasivo y atención personalizada.">Modificar</button>
+                                    <button type="button" class="btn btn-primary btn-eliminar">Eliminar</button>
+                    </div>
+                </li>
+            </ul>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar mi perfil</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Apellido:</label>
+                                <input type="text" class="form-control" id="apellido">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Terapia:</label>
+                                <input type="text" class="form-control" id="terapia">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Edad:</label>
+                                <input type="text" class="form-control" id="edad">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Correo:</label>
+                                <input type="text" class="form-control" id="correo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Domicilio:</label>
+                                <input type="text" class="form-control" id="domicilio">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Número de telefono:</label>
+                                <input type="text" class="form-control" id="telefono">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Horario disponible:</label>
+                                <input type="text" class="form-control" id="horario">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Tarifa por hora:</label>
+                                <input type="text" class="form-control" id="tarifa">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Descripción:</label>
+                                <input type="text" class="form-control" id="descripcion">
+                            </div>
+               </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" id="enviarBtn">Enviar</button>
+                    </div>
+                </div>
+            </div>
+</div>
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevo perfil</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Apellido:</label>
+                                <input type="text" class="form-control" id="apellido">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Terapia:</label>
+                                <input type="text" class="form-control" id="terapia">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Edad:</label>
+                                <input type="text" class="form-control" id="edad">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Correo:</label>
+                                <input type="text" class="form-control" id="correo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Domicilio:</label>
+                                <input type="text" class="form-control" id="domicilio">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Número de telefono:</label>
+                                <input type="text" class="form-control" id="telefono">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Horario disponible:</label>
+                                <input type="text" class="form-control" id="horario">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Tarifa por hora:</label>
+                                <input type="text" class="form-control" id="tarifa">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Descripción:</label>
+                                <input type="text" class="form-control" id="descripcion">
+                            </div>
+               </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" id="enviarBtn1">Enviar</button>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    <footer>
+        <p class="left">Contacto: 1112345678</p>
+        <div class="right">
+            <p> Visite nuestras redes sociales</p>
+            <a href="https://www.instagram.com/equipo.redat/" target="_blank">
+                <img class="redes" src="./images/instagram.png">
+            </a>
+            <a href="https://www.facebook.com/people/REDAT-Tratamientos-en-Discapacidad/100064817973863/" target="_blank">
+                <img class="redes" src="./Images/facebook.png">
+            </a>
+        </div>
+    </footer>
+    <script src="/adminscript.js"></script>
+</body>
+
+</html>

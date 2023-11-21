@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="styleMensajes.css">
+</head>
+
+<body>
+    <nav class="encabezado">
+        <a href="profesionales.html">
+            <img class="logo" src="/images/Logo.png">
+        </a>
+        <h1>Centro Integral de Asistencia</h1>
+    </nav>
+    <div class="dark-mode-toggle">
+        <label for="toggle-switch">Modo Oscuro</label>
+        <input type="checkbox" id="toggle-switch">
+    </div>
+    <div class="bd-example">
+        <div class="row">
+          <div class="col-4">
+            <div id="list-example" class="list-group">
+              <a class="list-group-item list-group-item-action active" href="#list-item-1">Lucía Gomez (1)</a>
+              </div>
+          </div>
+          <div class="col-8">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+              <h4 id="list-item-1">Lucía Gomez</h4>
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-success">Hola María, Necesito agendar un turno la semana que viene.</li>
+                <li class="list-group-item list-group-item-dark">Hola,¿qué día y hora puedes?</li>
+                <li class="list-group-item list-group-item-success">¿El Lunes a las 12:00 PM?</li>
+                <li class="list-group-item list-group-item-dark">Bien,  el Lunes a las
+                    12:00 PM.</li>
+                <li class="list-group-item list-group-item-dark">¿Podrás adelantarme sobre tu problemática?</li>
+                <li class="list-group-item list-group-item-success">Es sobre mi padre, necesita acompañamiento.</li>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here"
+                        id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Responder
+                    </label>
+                    <button type="button" class="btn btn-primary responder" id="enviarBtnUno">Enviar</button>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </ul>
+ </div>
+          </div>
+        </div>
+      </div>
+         <!-- <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Marta Sánchez</div>
+                            Hoy
+                        </div>
+                        <span class="badge bg-primary rounded-pill">1</span>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-success">Hola Marta, ¿podemos agendar una cita
+                                para la próxima semana?</li>
+                            <li class="list-group-item list-group-item-dark">¡Hola! Claro, ¿qué día y hora te vendría
+                                bien?</li>
+                            <li class="list-group-item list-group-item-success">¿El martes a las 3:00 PM?</li>
+                            <li class="list-group-item list-group-item-dark">Perfecto, te agendaré para el martes a las
+                                3:00 PM. ¿Algún tema en particular que te gustaría tratar?</li>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here"
+                                    id="floatingTextarea"></textarea>
+                                <label for="floatingTextarea">Responder
+                                </label>
+                                <button type="button" class="btn btn-primary responder" id="enviarBtnUno">Enviar</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Rosa Gómez</div>
+                            22 de abril de 2023
+                        </div>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-success">Hola Rosa, , estoy buscando un
+                                acompañante terapéutico para mi hijo.</li>
+                            <li class="list-group-item list-group-item-dark"> ¡Hola! Estoy aquí para ayudarte. ¿Puedes
+                                contarme un poco más sobre las necesidades de tu hijo?</li>
+                            <li class="list-group-item list-group-item-success">Tiene autismo y a veces se siente
+                                abrumado en entornos nuevos.</li>
+                            <li class="list-group-item list-group-item-dark">Entiendo. Podemos trabajar juntos para
+                                brindarle el apoyo necesario. ¿Te gustaría programar una reunión?</li>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here"
+                                    id="floatingTextarea"></textarea>
+                                <label for="floatingTextarea">Responder
+                                    <button type="button" class="btn btn-primary responder" id="enviarBtnTres">Enviar</button>
+                                </label>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section> 
+    <footer>
+        <p class="left">Contacto: 1112345678</p>
+        <div class="right">
+            <p> Visite nuestras redes sociales</p>
+            <a href="https://www.instagram.com/equipo.redat/" target="_blank">
+                <img class="redes" src="./images/instagram.png">
+            </a>
+            <a href="https://www.facebook.com/people/REDAT-Tratamientos-en-Discapacidad/100064817973863/" target="_blank">
+                <img class="redes" src="./Images/facebook.png">
+            </a>
+        </div>
+    </footer>
+    <script src="mensajesscript.js"></script>
+</body>
+
+</html>

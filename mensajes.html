@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="styleMensajes.css">
+</head>
+
+<body>
+    <nav class="encabezado">
+        <a href="clientes.html">
+            <img class="logo" src="/images/Logo.png">
+        </a>
+        <h1>Centro Integral de Asistencia</h1>
+    </nav>
+    <div class="dark-mode-toggle">
+        <label for="toggle-switch">Modo Oscuro</label>
+        <input type="checkbox" id="toggle-switch">
+    </div>
+    <div class="bd-example">
+        <div class="row">
+          <div class="col-4">
+            <div id="list-example" class="list-group">
+              <a class="list-group-item list-group-item-action active" href="#list-item-1">María Lopez (2)</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-2">Laura Villalba</a>
+            </div>
+          </div>
+          <div class="col-8">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+              <h4 id="list-item-1">María Lopez</h4>
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-dark">Hola María, Necesito agendar un turno la semana que viene.</li>
+                <li class="list-group-item list-group-item-success">Hola,¿qué día y hora puedes?</li>
+                <li class="list-group-item list-group-item-dark">¿El Lunes a las 12:00 PM?</li>
+                <li class="list-group-item list-group-item-success">Bien,  el Lunes a las
+                    12:00 PM.</li>
+                <li class="list-group-item list-group-item-success">¿Podrás adelantarme sobre tu problemática?</li>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here"
+                        id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Responder
+                    </label>
+                    <button type="button" class="btn btn-primary responder" id="enviarBtnUno">Enviar</button>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </ul><h4 id="list-item-2">Laura Villalba</h4>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-dark">Hola Laura, necesito sesiones de TO para mi sobrino.</li>
+                <li class="list-group-item list-group-item-success"> Buenas tardes ¿Puedes
+                    contarme un poco más del motivo?</li>
+                <li class="list-group-item list-group-item-dark">No se adapta en la escuela.</li>
+                <li class="list-group-item list-group-item-dark">Tiene mala conducta en la casa.</li>
+                <li class="list-group-item list-group-item-dark">Ya es grande, tiene 14 años y se pelea con los compañeros.</li>
+                <li class="list-group-item list-group-item-success">Entiendo. Vamos a ayudarte</li>
+                <li class="list-group-item list-group-item-success">Tengo disponible el Lunes próximo a las 10:00AM, aguardo a que me confirmes.</li>
+                <li class="list-group-item list-group-item-dark">Excelente a esa hora, nos vemos!</li>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here"
+                        id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Responder
+                    </label>
+                        <button type="button" class="btn btn-primary responder" id="enviarBtnDos">Enviar</button>
+                    
+                </div>
+            </ul>
+ </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <footer>
+        <p class="left">Contacto: 1112345678</p>
+        <div class="right">
+            <p> Visite nuestras redes sociales</p>
+            <a href="https://www.instagram.com/equipo.redat/" target="_blank">
+                <img class="redes" src="./images/instagram.png">
+            </a>
+            <a href="https://www.facebook.com/people/REDAT-Tratamientos-en-Discapacidad/100064817973863/" target="_blank">
+                <img class="redes" src="./Images/facebook.png">
+            </a>
+        </div>
+    </footer>
+    <script src="mensajesscript.js"></script>
+</body>
+
+</html>

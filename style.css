@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 620px) {
+
+    .menu,
+    .main,
+    .right {
+        width: 100%;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: "Inria Sans-Bold", Helvetica;
+    height: 100%;
+    position: absolute;
+}
+
+
+.encabezado {
+    background-color: #cdceed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  opacity: 1;
+}
+
+button {
+    background-color: #8ba5ecf7;
+    border-radius: 8px;
+    width: 100px;
+    height: 100%;
+    transition: background-color 0.5s ease;
+}
+
+button:hover {
+    background-color: #063474;
+  }
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+.centro{
+  font-size: 2.5vw;
+}
+
+#nosotros h4 {
+  padding: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#nosotros p {
+  padding: 10px;
+  font-size: 15px;
+  align-items: center;
+  justify-content: right;
+  display: flex;
+}
+
+.card1 {
+  margin-bottom: 5px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(186, 186, 186, 0.8)), url("https://politicanecochea.com.ar/wp-content/uploads/2022/10/Featured-image-Student-Blog-Hospital-Team.jpg");
+   
+}
+
+.card2 {
+  margin-bottom: 5px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(186, 186, 186, 0.8)), url("https://4.bp.blogspot.com/-7BEj1p4i9QY/W0SxR-ZsYUI/AAAAAAAAAGg/rbKfFQaXfYIoVXYIbVDSnncmY6Yma3NVgCPcBGAYYCw/s1600/mujeres-con-hombre-maduro-sentado-en-silla-de-ruedas-en-el-parque_13339-30429.jpg");
+   
+}
+
+.card3 {
+  margin-bottom: 5px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(186, 186, 186, 0.8)), url("https://www.ipchile.cl/wp-content/uploads/2011/11/terapia-ocupacional-1.jpg");
+   
+}
+.card-text{
+  font-size: 20px;
+}
+
+.card-title{
+  font-weight: bold;
+}
+
+iframe{
+  border-radius: 4px;
+}
+
+
+footer {
+  background-color: #cdceed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0px;
+  right: 0px;
+  height: 50px;
+  padding: 10px;
+}
+
+  /* OK */
+footer p {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+  /* OK */
+.left {
+  margin: 0; 
+}
+
+  /* OK */
+.right {
+  display: flex;
+  gap: 10px; 
+}
+
+
+.redes {
+  height: 50px;
+  margin-right: 5px;
+  margin-left: 5px;
+  align-self: left;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode-toggle {
+  align-self: flex-end; /* Ubica el interruptor en la esquina inferior derecha */
+  margin: 10px; /* Agrega un margen para mayor espacio */
+}
+
+.dark-mode-toggle label {
+  margin-right: 8px;
+  cursor: pointer; /* Hacer que el label sea clickeable */
+}
+.content {
+  flex: 1; /* Esto hace que el contenido ocupe el espacio restante */
+}

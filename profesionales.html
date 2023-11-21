@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Profesionales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/styleProfesionales.css">
+</head>
+<body>
+    <nav class="encabezado">
+        <img class="logo" src="/images/Logo.png" />
+        <h1>Centro Integral de Asistencia</h1>
+    </nav>
+    <div class="dark-mode-toggle">
+        <label for="toggle-switch">Modo Oscuro</label>
+        <input type="checkbox" id="toggle-switch">
+    </div>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true" class="container scrollspy-example" tabindex="0">
+    <div class="container-sm profesionales">
+        <div class="bd-example m-0 border-0">
+            <a href="mensajesProf.html">
+            <button type="button" class="btn btn-primary">Mensajes</button>
+        </a>
+            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            fullName="María Lopez" terapia="Acompañante de gente mayor" edad="28" Correo="mlopez@gmail.com" domicilio="calle 123" telefono="123456224" horarioDisponible="9hs a 19hs" valorHora="$1500"
+            tarifa="1800">Modificar</button>
+            </div>
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar mi perfil</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Nombre completo:</label>
+                                <input type="text" class="form-control" id="fullName">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Terapia:</label>
+                                <input type="text" class="form-control" id="terapia">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Edad:</label>
+                                <input type="text" class="form-control" id="edad">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Correo:</label>
+                                <input type="text" class="form-control" id="correo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Domicilio:</label>
+                                <input type="text" class="form-control" id="domicilio">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Teléfono:</label>
+                                <input type="text" class="form-control" id="telefono">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Horario disponible:</label>
+                                <input type="text" class="form-control" id="horarioDisponible">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Valor hora:</label>
+                                <input type="text" class="form-control" id="valorHora">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Descripción:</label>
+                                <textarea class="form-control"
+                                    id="message-text">María Lopez es una acompañante terapéutica con 2 años de experiencia</textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" id="botonEnviar">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer >
+        <p class="left">Contacto: 1112345678</p>
+        <div class="right">
+            <p> Visite nuestras redes sociales</p>
+            <a href="https://www.instagram.com/equipo.redat/" target="_blank">
+                <img class="redes" src="./images/instagram.png">
+            </a>
+            <a href="https://www.facebook.com/people/REDAT-Tratamientos-en-Discapacidad/100064817973863/" target="_blank">
+                <img class="redes" src="./Images/facebook.png">
+            </a>
+        </div>
+    </footer>
+    <script src="/profesionalesscript.js"></script>
+</body>
+
+</html>

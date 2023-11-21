@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 620px) {
+    .menu,
+    .main,
+    .right {
+        width: 100%;
+    }
+}
+
+.encabezado {
+    background-color: #cdceed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    font-family: "Inria Sans-Bold", Helvetica;
+    height: 100%;
+    position: revert-layer;
+    background-color: white;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    opacity: 1;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.profesionales {
+    margin-top: 80px;
+}
+
+
+.carousel-control-next {
+    height: 25px;
+    margin-top: 25%;
+}
+
+.carousel-control-prev {
+    height: 25px;
+    margin-top: 25%;
+}
+
+footer {
+    background-color: #cdceed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0px;
+    right: 0px;
+    height: 50px;
+    padding: 10px;
+  }
+  
+    /* OK */
+  footer p {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+    /* OK */
+  .left {
+    margin: 0; 
+  }
+  
+    /* OK */
+  .right {
+    display: flex;
+    gap: 10px; 
+  }
+  
+  
+  .redes {
+    height: 50px;
+    margin-right: 5px;
+    margin-left: 5px;
+    align-self: left;
+  }
+
+
+  .dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dark-mode-toggle {
+    align-self: flex-end; /* Ubica el interruptor en la esquina inferior derecha */
+    margin: 10px; /* Agrega un margen para mayor espacio */
+  }
+  
+  .dark-mode-toggle label {
+    margin-right: 8px;
+    cursor: pointer; /* Hacer que el label sea clickeable */
+  }
+  .content {
+    flex: 1; /* Esto hace que el contenido ocupe el espacio restante */
+  }

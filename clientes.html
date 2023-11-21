@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/styleClientes.css">
+</head>
+
+<body>
+    <nav class="encabezado">
+        <img class="logo" src="/images/Logo.png" />
+        <h1>Centro Integral de Asistencia</h1>
+                <a href="mensajes.html">
+                        <button type="button" class="btn btn-primary position-relative">Mensajes(1)
+                        </button>
+                    </a>
+    </nav>
+    <div class="dark-mode-toggle">
+        <label for="toggle-switch">Modo Oscuro</label>
+        <input type="checkbox" id="toggle-switch">
+    </div>
+    
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="principal scrollspy-example bg-body-tertiary" tabindex="0">
+
+        <section class="profesionales container-sm">
+            <h1>Cartilla de médicos</h1>
+
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-cartas carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card mb-3">
+                            <img src="https://cdn.aarp.net/content/dam/aarp/home-and-family/caregiving/2016/11/1140-puerto-rico-long-term-care-esp.jpg"
+                                class="card-img-top d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">María Lopez</h5>
+                                <p class="card-text">Profesión: Acompañante de gente mayor</p>
+                                <p class="card-text">Disponibilidad: 9hs a 19hs</p>
+                                <p class="card-text">Puntuación: 8.5</p>
+                                <p class="card-text">Valor hora: $1500</p>
+                                <p class="card-text">María es una acompañante terapéutica con 2 años de experiencia.</p>
+                                <br />
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="María">Solicitar turno</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mb-3">
+                            <img src="https://www.shrinerschildrens.org/-/media/images/shc/pediatric-care/little_boy_playing_blocks_male_nurse_1200x852_77407.ashx"
+                                class="card-img-top d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Juan Alvarez</h5>
+                                <p class="card-text">Profesión: TO</p>
+                                <p class="card-text">Disponibilidad: 9hs a 12hs</p>
+                                <p class="card-text">Puntuación: 9.5</p>
+                                <p class="card-text">Valor hora: $2500</p>
+                                <p class="card-text">Juan es un profesional experimentado con 8 años en el campo.</p>
+                                <br />
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Juan">Solicitar turno</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mb-3">
+                            <img src="https://www.sanfernando.gob.ar/images/principales/1440x810_76521414_physiotherapist-helping-patient-at-her-clinic-1.jpg"
+                                class="card-img-top d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Laura Villalba</h5>
+                                <p class="card-text">Profesión: Kinesiología</p>
+                                <p class="card-text">Disponibilidad: 9hs a 18hs</p>
+                                <p class="card-text">Puntuación: 8.5</p>
+                                <p class="card-text">Valor hora: $1900</p>
+                                <p class="card-text">Laura Villalba es una profesional comprometida con 3 años de experiencia.</p>
+                                <br />
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Laura">Solicitar turno</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mb-3">
+                            <img src="https://www.lavoz.com.ar/resizer/pu6Snt-BWGhIsPResJofCb6A5cY=/980x640/smart/filters:quality(75):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/7TUPW674GNGERKL43WQLSS5TVI.png"
+                                class="card-img-top d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Juan Martínez</h5>
+                                <p class="card-text">Profesión: TO</p>
+                                <p class="card-text">Disponibilidad: 9hs a 19hs</p>
+                                <p class="card-text">Puntuación: 10</p>
+                                <p class="card-text">Valor hora: $2000</p>
+                                <p class="card-text">Juan Martínez es un acompañante terapéutico con 6 años de experiencia. Ha recibido elogios por su enfoque compasivo y atención personalizada.</p>
+                                <br />
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Juan">Solicitar turno</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Destinatario:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Mensaje:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" id="enviarBtn">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p class="left">Contacto: 1112345678</p>
+        <div class="right">
+            <p> Visite nuestras redes sociales</p>
+            <a href="https://www.instagram.com/equipo.redat/" target="_blank">
+                <img class="redes" src="./images/instagram.png">
+            </a>
+            <a href="https://www.facebook.com/people/REDAT-Tratamientos-en-Discapacidad/100064817973863/" target="_blank">
+                <img class="redes" src="./Images/facebook.png">
+            </a>
+        </div>
+    </footer>
+    <script src="/clientesscript.js"></script>
+</body>
+
+</html>
